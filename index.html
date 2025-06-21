@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+
+</head>
+<body>
+    <div class="container pt-5">
+        <div class="header-container d-flex justify-content-between align-items-center px-5 py-3 flex-column flex-md-row">
+            <div class="title d-flex justify-content-center align-items-center pb-3 pb-md-0">
+                <picture>
+                    <img src="./imgs/logo.png" alt="Weather logo" class="w-100 pe-2">
+                </picture>
+                <h1 class="fs-4 m-0">Weather</h1>
+            </div>
+            <input type="text" class="w-100 ms-md-5 p-2" placeholder="find your location" id="searchInput">
+        </div>
+        <div class="weather-container row my-4 gy-2">
+            <div class="col-sm-6 col-md-3">
+                <div class="today-weather card-style p-4 d-flex flex-column" id="cityWeather">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-9">
+                <div class="week-weather row gy-2" id="weekDaysWeather">
+                </div>
+                <div class="todys-highlights row mt-4 gy-2" id="weatherHighlight">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./javascript/main.js"></script>
+</body>
+</html>
